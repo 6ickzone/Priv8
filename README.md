@@ -13,9 +13,9 @@ Repository Structure
   <ul>
     <li>Priv8/
       <ul>
-        <li><code>mu.php</code> &mdash; Mass uploader (priv8 version)</li>
+        <li><code>mu.php</code> &mdash; [Mass uploader]</li>
         <li><code>README.md</code> &mdash; Main documentation</li>
-        <li><code>tools/</code> &mdash; Public tools (deface shells, bypassers, mini uploaders)
+        <li><code>tools/</code> &mdash; Public tools (Random shells, bypassers, mini uploaders)
           <ul>
             <li><code>deface-mini.php</code></li>
             <li><code>shell-bypass.php</code></li>
@@ -29,7 +29,7 @@ Repository Structure
             <li>...</li>
           </ul>
         </li>
-        <li><code>LICENSE</code> &mdash; MIT License</li>
+        <li><code>LICENSE</code> &mdash; License</li>
         <li><code>.gitignore</code> &mdash; Excluded files for Git</li>
       </ul>
     </li>
