@@ -1,0 +1,36 @@
+# OS generated
+.DS_Store
+Thumbs.db
+__MACOSX/
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# Logs & cache
+*.log
+*.cache
+
+# Backups & temp
+*.bak
+*.old
+*.swp
+*~
+
+# PHP sessions
+sess_*
+
+# Composer
+vendor/
+
+# Node.js
+node_modules/
+
+# Environment files
+.env
+
+# IDEs
+.idea/
+.vscode/
