@@ -7,7 +7,6 @@ This repository contains a collection of priv8 tools crafted by 6ickzone for pen
 
 Repository Structure
 
-Use the HTML snippet below to ensure consistent rendering on GitHub or your blog:
 
 <section>
   <h2>Repository Structure</h2>
@@ -95,7 +94,6 @@ This repository uses a .gitignore file to exclude OS files, logs, cache, backups
 
 LICENSE: MIT License (see LICENSE file).
 
-Empty folders: tools/ and pirv8/ are ready for your scripts.
 
 ---
 ---
