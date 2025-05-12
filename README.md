@@ -6,22 +6,22 @@ This repository contains a collection of priv8 tools crafted by 6ickzone for pen
 ---
 
 Repository Structure
-##########################################################################################################################
-Priv8/
-├── mu.php              # Mass uploader (priv8 version)
-├── README.md           # Main documentation
-├── tools/              # Public tools (deface shells, bypassers, mini uploaders)
-│   ├── deface-mini.php
-│   ├── shell-bypass.php
-│   └── ...
-├── pirv8/              # Priv8 tools (password‑protected, encryption, extra features)
-│   ├── elite-uploader.php
-│   ├── priv8-shell.php
-│   └── ...
-├── LICENSE             # MIT License
-└── .gitignore          # Excluded files for Git
 
-#########################################################################################################################
+Priv8/
+  mu.php          # Mass uploader (priv8 version)
+  README.md       # Main documentation
+  tools/          # Public tools (deface shells, bypassers, mini uploaders)
+    deface-mini.php
+    shell-bypass.php
+    ...
+  pirv8/          # Priv8 tools (password-protected, encryption, extra features)
+    elite-uploader.php
+    priv8-shell.php
+    ...
+  LICENSE         # MIT License
+  .gitignore      # Excluded files for Git
+
+
 ---
 
 Category Rules
@@ -94,7 +94,7 @@ __MACOSX/
 # Archives
 *.zip
 *.tar
-t*.tar.gz
+*.tar.gz
 *.rar
 
 # Logs & cache
