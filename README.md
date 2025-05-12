@@ -91,64 +91,13 @@ Legal Note
 Initial Repo Setup
 
 .gitignore: Excludes OS files, archives, logs, editor configs, backups.
+This repository uses a .gitignore file to exclude OS files, logs, cache, backups, and development folders.
 
 LICENSE: MIT License (see LICENSE file).
 
 Empty folders: tools/ and pirv8/ are ready for your scripts.
 
-
-Sample .gitignore:
-
-# OS generated
-.DS_Store
-Thumbs.db
-__MACOSX/
-
-# Archives
-*.zip
-*.tar
-*.tar.gz
-*.rar
-
-# Logs & cache
-*.log
-*.cache
-
-# Backups & temp
-*.bak
-*.old
-*.swp
-*~
-
-# PHP sessions
-sess_*
-
-# Composer
-vendor/
-
-# Node
-node_modules/
-
-# Env files
-.env
-
-# IDEs
-.idea/
-.vscode/
-
-
 ---
-
-Next Steps
-
-[ ] Add new tools into tools/ and pirv8/ folders
-
-[ ] Write individual README for each tool
-
-[ ] Publish announcement on 0x6sec blog
-
-
-
 ---
 
 Credits
