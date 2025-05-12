@@ -7,37 +7,50 @@ This repository contains a collection of priv8 tools crafted by 6ickzone for pen
 
 Repository Structure
 
-Priv8/
-  mu.php          # Mass uploader (priv8 version)
-  README.md       # Main documentation
-  tools/          # Public tools (deface shells, bypassers, mini uploaders)
-    deface-mini.php
-    shell-bypass.php
-    ...
-  pirv8/          # Priv8 tools (password-protected, encryption, extra features)
-    elite-uploader.php
-    priv8-shell.php
-    ...
-  LICENSE         # MIT License
-  .gitignore      # Excluded files for Git
+Use the HTML snippet below to ensure consistent rendering on GitHub or your blog:
 
+<section>
+  <h2>Repository Structure</h2>
+  <ul>
+    <li>Priv8/
+      <ul>
+        <li><code>mu.php</code> &mdash; Mass uploader (priv8 version)</li>
+        <li><code>README.md</code> &mdash; Main documentation</li>
+        <li><code>tools/</code> &mdash; Public tools (deface shells, bypassers, mini uploaders)
+          <ul>
+            <li><code>deface-mini.php</code></li>
+            <li><code>shell-bypass.php</code></li>
+            <li>...</li>
+          </ul>
+        </li>
+        <li><code>pirv8/</code> &mdash; Priv8 tools (password-protected, encryption, extra features)
+          <ul>
+            <li><code>elite-uploader.php</code></li>
+            <li><code>priv8-shell.php</code></li>
+            <li>...</li>
+          </ul>
+        </li>
+        <li><code>LICENSE</code> &mdash; MIT License</li>
+        <li><code>.gitignore</code> &mdash; Excluded files for Git</li>
+      </ul>
+    </li>
+  </ul>
+</section>
 
 ---
 
-Category Rules
+## Category Rules
 
-tools/: Public or simple versions of tools.
-
-pirv8/: Priv8-grade tools with password protection, randomization, encryption, or stealth features.
-
-
+- **tools/**: Public or simple versions of tools.
+- **pirv8/**: Priv8-grade tools with password protection, randomization, encryption, or stealth features.
 
 ---
 
-Standard README for Each Tool
+## Standard README for Each Tool
 
-Each tool directory should contain a README.md with this template:
+Each tool directory should contain a `README.md` with this template:
 
+```markdown
 # Tool Name
 
 Brief description of the tool.
