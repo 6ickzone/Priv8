@@ -1,6 +1,6 @@
 6ickzone Priv8 Arsenal
 
-This repository contains a collection of priv8 tools created by 6ickzone, crafted for pentesting, red teaming, and underground scene educational purposes.
+This repository contains a collection of priv8 tools crafted by 6ickzone for pentesting, red teaming, and underground-scene education.
 
 
 ---
@@ -8,27 +8,27 @@ This repository contains a collection of priv8 tools created by 6ickzone, crafte
 Repository Structure
 
 Priv8/
-├── mu.php                 # Mass uploader (priv8 version)
-├── README.md              # Main documentation
-├── tools/                 # Public tools (deface shells, bypassers, mini uploaders)
+├── mu.php              # Mass uploader (priv8 version)
+├── README.md           # Main documentation
+├── tools/              # Public tools (deface shells, bypassers, mini uploaders)
 │   ├── deface-mini.php
 │   ├── shell-bypass.php
 │   └── ...
-├── pirv8/                 # Priv8 tools (with password, encryption, extra features)
+├── pirv8/              # Priv8 tools (password‑protected, encryption, extra features)
 │   ├── elite-uploader.php
 │   ├── priv8-shell.php
 │   └── ...
-├── LICENSE                # License
-└── .gitignore             # Excluded files for Git
+├── LICENSE             # MIT License
+└── .gitignore          # Excluded files for Git
 
 
 ---
 
 Category Rules
 
-tools/ → Public tools, open or simple versions.
+tools/: Public or simple versions of tools.
 
-pirv8/ → Tools with password protection, randomizer features, encryption, or other priv8 advantages.
+pirv8/: Priv8-grade tools with password protection, randomization, encryption, or stealth features.
 
 
 
@@ -36,20 +36,23 @@ pirv8/ → Tools with password protection, randomizer features, encryption, or o
 
 Standard README for Each Tool
 
-Every tool must have a minimal README like this:
+Each tool directory should contain a README.md with this template:
 
 # Tool Name
 
-Brief description about the tool.
+Brief description of the tool.
 
 ## Features
 - ✅ Feature 1
 - ✅ Feature 2
 
 ## Usage
-1. Upload the file.
-2. Access via browser.
-3. Login (if password protected).
+1. Upload the file to your target directory.
+2. Access via browser:
+
+http://target/path/tool.php?p=yourpassword
+
+3. Follow on-screen instructions.
 
 ## Default Password
 `?p=yourpassword`
@@ -58,39 +61,78 @@ Brief description about the tool.
 - NyxCode
 - 0x6ick
 
+---
+
 
 ---
 
 Legal Note
 
-⚠️ These tools are for educational and authorized penetration testing only. Do not use for illegal activities.
+> ⚠️ For educational and authorized penetration testing only. The authors are not responsible for misuse.
+
+
 
 
 ---
 
 Initial Repo Setup
 
-Prepared:
+.gitignore: Excludes OS files, archives, logs, editor configs, backups.
 
-.gitignore → To exclude files like .DS_Store, *.zip, and __MACOSX from GitHub.
+LICENSE: MIT License (see LICENSE file).
 
-LICENSE → Using MIT License for open-source tools (can be changed if needed).
+Empty folders: tools/ and pirv8/ are ready for your scripts.
 
-tools/ → Empty folder for public tools.
 
-pirv8/ → Empty folder for priv8 tools.
+Sample .gitignore:
 
+# OS generated
+.DS_Store
+Thumbs.db
+__MACOSX/
+
+# Archives
+*.zip
+*.tar
+t*.tar.gz
+*.rar
+
+# Logs & cache
+*.log
+*.cache
+
+# Backups & temp
+*.bak
+*.old
+*.swp
+*~
+
+# PHP sessions
+sess_*
+
+# Composer
+vendor/
+
+# Node
+node_modules/
+
+# Env files
+.env
+
+# IDEs
+.idea/
+.vscode/
 
 
 ---
 
 Next Steps
 
-[ ] Add new tools into tools/ and pirv8/
+[ ] Add new tools into tools/ and pirv8/ folders
 
-[ ] Upload README.md in each folder
+[ ] Write individual README for each tool
 
-[ ] Ready to publish on 0x6sec blog
+[ ] Publish announcement on 0x6sec blog
 
 
 
@@ -98,7 +140,7 @@ Next Steps
 
 Credits
 
-Developed by
+Developed by:
 
 6ickzone (https://github.com/6ickzone)
 
