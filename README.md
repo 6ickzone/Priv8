@@ -1,6 +1,6 @@
 6ickzone Priv8 Arsenal
 
-This repository contains a collection of priv8 tools created by 6ickzone, crafted for pentesting, red teaming, and the underground scene educational purposes.
+This repository contains a collection of priv8 tools created by 6ickzone, crafted for pentesting, red teaming, and underground scene educational purposes.
 
 
 ---
@@ -52,15 +52,11 @@ Brief description about the tool.
 3. Login (if password protected).
 
 ## Default Password
+`?p=yourpassword`
 
-?p=yourpassword
-
-Credits
-
-NyxCode
-
-0x6ick
-
+## Credits
+- NyxCode
+- 0x6ick
 
 
 ---
@@ -69,29 +65,46 @@ Legal Note
 
 ⚠️ These tools are for educational and authorized penetration testing only. Do not use for illegal activities.
 
+
 ---
 
-## Initial Repo Setup
+Initial Repo Setup
 
 Prepared:
-- `.gitignore` → To exclude files like `.DS_Store`, `*.zip`, and `__MACOSX` from GitHub.
-- `LICENSE` → Using MIT License for open-source tools (can be changed if needed).
+
+.gitignore → To exclude files like .DS_Store, *.zip, and __MACOSX from GitHub.
+
+LICENSE → Using MIT License for open-source tools (can be changed if needed).
+
+tools/ → Empty folder for public tools.
+
+pirv8/ → Empty folder for priv8 tools.
+
+
 
 ---
 
-## Next Steps
+Next Steps
 
-- [ ] Add new tools into `tools/` and `pirv8/`
-- [ ] Upload README.md in each folder
-- [ ] Ready to publish on 0x6sec blog
+[ ] Add new tools into tools/ and pirv8/
+
+[ ] Upload README.md in each folder
+
+[ ] Ready to publish on 0x6sec blog
+
+
 
 ---
 
-## Credits
+Credits
 
-Developed by  
-- **6ickzone** (https://github.com/6ickzone)  
-- **NyxCode**
+Developed by
+
+6ickzone (https://github.com/6ickzone)
+
+NyxCode
+
+
 
 ---
 
