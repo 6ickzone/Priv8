@@ -6,7 +6,7 @@ This repository contains a collection of priv8 tools crafted by 6ickzone for pen
 ---
 
 Repository Structure
-
+##########################################################################################################################
 Priv8/
 ├── mu.php              # Mass uploader (priv8 version)
 ├── README.md           # Main documentation
@@ -21,7 +21,7 @@ Priv8/
 ├── LICENSE             # MIT License
 └── .gitignore          # Excluded files for Git
 
-
+#########################################################################################################################
 ---
 
 Category Rules
