@@ -22,7 +22,7 @@ Repository Structure
             <li>...</li>
           </ul>
         </li>
-        <li><code>pirv8/</code> &mdash; Priv8 tools (password-protected, encryption, extra features)
+        <li><code>666/</code> &mdash; priv8 tools (password-protected, encryption, extra features)
           <ul>
             <li><code>elite-uploader.php</code></li>
             <li><code>priv8-shell.php</code></li>
@@ -41,7 +41,7 @@ Repository Structure
 ## Category Rules
 
 - **tools/**: Public or simple versions of tools.
-- **pirv8/**: Priv8-grade tools with password protection, randomization, encryption, or stealth features.
+- **666/**: Priv8-grade tools with password protection, randomization, encryption, or stealth features.
 
 ---
 
@@ -104,7 +104,7 @@ Developed by:
 
 6ickzone (https://github.com/6ickzone)
 
-NyxCode
+Nyx6st
 
 
 
