@@ -16,16 +16,17 @@ Repository Structure
         <li><code>README.md</code> &mdash; Main documentation</li>
         <li><code>tools/</code> &mdash; Public tools (Random shells, bypassers, mini uploaders)
           <ul>
-            <li><code>deface-mini.php</code></li>
-            <li><code>shell-bypass.php</code></li>
+            <li><code>mini.php</code></li>(mini shell) 
+            <li><code>massdeface.php</code></li>(Auto mass deface) 
             <li>shell helper...</li>
           </ul>
         </li>
         <li><code>666/</code> &mdash; priv8 tools (password-protected, encryption, extra features)
           <ul>
-            <li><code>Priv8-uploader.php</code></li>
-            <li><code>priv8-shell.php</code></li>
-            <li>shell helper...</li>
+            <li><code>mini.php</code></li>(mini shell with auth)
+            <li><code>up2.php</code><li>(dual uploader) 
+            <li><code>mass.php</code></li>(mass defacer tool all dir) 
+            <li><code>wp.php</code></li>(wp auto admin) 
           </ul>
         </li>
         <li><code>LICENSE</code> &mdash; License</li>
