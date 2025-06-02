@@ -26,7 +26,8 @@ Repository Structure
             <li><code>mini.php</code></li>(mini shell with auth)
             <li><code>up2.php</code></li>(Dual Directory Deployment with Info Dump) 
             <li><code>mass.php</code></li>(mass defacer tool all dir) 
-            <li><code>wp.php</code></li>(wp auto admin) 
+            <li><code>wp.php</code></li>(wp auto admin)
+            <li>shell helper. . . </li>
           </ul>
         </li>
         <li><code>LICENSE</code> &mdash; License</li>
