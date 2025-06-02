@@ -24,7 +24,7 @@ Repository Structure
         <li><code>666/</code> &mdash; priv8 tools (password-protected, encryption, extra features)
           <ul>
             <li><code>mini.php</code></li>(mini shell with auth)
-            <li><code>up2.php</code><li>(dual uploader) 
+            <li><code>up2.php</code><li>(Dual Directory Deployment with Info Dump) 
             <li><code>mass.php</code></li>(mass defacer tool all dir) 
             <li><code>wp.php</code></li>(wp auto admin) 
           </ul>
