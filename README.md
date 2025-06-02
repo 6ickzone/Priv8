@@ -13,20 +13,19 @@ Repository Structure
   <ul>
     <li>Priv8/
       <ul>
-        <li><code>mu.php</code> &mdash; [Mass uploader]</li>
         <li><code>README.md</code> &mdash; Main documentation</li>
         <li><code>tools/</code> &mdash; Public tools (Random shells, bypassers, mini uploaders)
           <ul>
             <li><code>deface-mini.php</code></li>
             <li><code>shell-bypass.php</code></li>
-            <li>...</li>
+            <li>shell helper...</li>
           </ul>
         </li>
         <li><code>666/</code> &mdash; priv8 tools (password-protected, encryption, extra features)
           <ul>
-            <li><code>elite-uploader.php</code></li>
+            <li><code>Priv8-uploader.php</code></li>
             <li><code>priv8-shell.php</code></li>
-            <li>...</li>
+            <li>shell helper...</li>
           </ul>
         </li>
         <li><code>LICENSE</code> &mdash; License</li>
