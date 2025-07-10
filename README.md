@@ -1,5 +1,5 @@
 6ickzone Priv8 Arsenal
-
+![n Screenshot](/n.png)
 This repository contains a collection of priv8 tools crafted by 6ickzone for pentesting, red teaming, and underground-scene education.
 
 
